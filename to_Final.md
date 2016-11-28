@@ -13,7 +13,7 @@ When the user start the to_Final transformation, the following steps are perform
 - Name matching with the INBO tsv
 - GBIF columns are added to the dataset
 - Duplicates are flagged
-- Final report is generated with as name convention : `Final_{Date}_{Time}.hmtl`
+- Final report is generated with as name convention : `Final-Reports_{Date}_{Time}_FINAL.hmtl`
 
 Apart from the transformation, the user also has the option to generate a csv export of the content of the current DynamoDB table "Final".
 Both the reports and the exports are shown in 2 separate lists in this tab.
