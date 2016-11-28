@@ -15,7 +15,7 @@ In the next parts we'll further elaborate on the AWS components and the differen
 The web application is the portal for the researcher. The tabs in the menu bar accord with the folder structure in the S3 bucket and represent the order in which the transformations in the workflow are executed. The fact that a file is in a certain folder, gives an indication of its data quality and state of transformation. A few extra tabs were added to provide additional and necessary functionalities.
 
 ![alt text](https://github.com/smartie-tien/test/blob/master/Web_Raw.png "Web_Raw")
-
+test
 | Tab | Description |
 | --- | --- |
 | **Upload to Raw** | Opens the page to upload raw data files from the data providers to the S3 folder "Raw"|
