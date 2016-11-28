@@ -2,7 +2,7 @@
 The purpose of the Proof of Value is to lay the foundations to centralise and standardise the data in the cloud, through means of a semi-automated workflow. To accomodate the original requests and workflow that was proposed in the working document that was provided by INBO, we agreed on the following general flow. 
 
 <p align="center">
-  <img src="/INBO_AF_00.png">
+  <img src="INBO_AF_00.png">
 </p>
 
 In order to minimize the workflow and ensure that it's easy-to-use and intuitive, we chose to only use tools that the researchers are familiar with :
