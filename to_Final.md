@@ -1,6 +1,6 @@
 ## Step 4 : to_Final
 
-**insert to_Final flow**
+![alt text](https://github.com/smartie-tien/test/blob/master/INBO_AF_04_to_Final.png "INBO_AF_04_to_Final")
 
 In the tab "Final" the end user will have access to all the functionalities that are related to the DynamoDB table "Final".
 
