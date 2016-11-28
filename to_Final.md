@@ -1,6 +1,8 @@
 ## Step 4 : to_Final
 
-![alt text](https://github.com/smartie-tien/test/blob/master/INBO_AF_04_to_Final.png "INBO_AF_04_to_Final")
+<p align="center">
+  <img src="https://github.com/smartie-tien/test/blob/master/INBO_AF_04_to_Final.png">
+</p>
 
 In the tab "Final" the end user will have access to all the functionalities that are related to the DynamoDB table "Final".
 
