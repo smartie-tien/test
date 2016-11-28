@@ -57,6 +57,7 @@ The user has to log in to use the application. At this moment anyone with a Goog
 ## AWS Components used
 
 <p align="center">
+
 | Component | Extra information |
 | --- | --- |
 | **Cognito** | User Authentication & Mobile Data Service |
@@ -65,6 +66,7 @@ The user has to log in to use the application. At this moment anyone with a Goog
 | **S3** | Simple Storage Service with folders : <br>Raw - Refused - Transformed - Validated - Reports - Final reports - Raw Export - Final Export
 | **SNS** | Simple Notification Service |
 | **SQS** | Simple Queue Service |
+
 </p>
 
 ## General Workflow
