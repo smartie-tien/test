@@ -16,7 +16,7 @@ The goal is to perform the initial structural validation based on quality standa
 
 There are two scenario's in this step, that are shown in the figure below.
 
-**insert flow to_Raw image**
+![alt text](https://github.com/smartie-tien/test/blob/master/INBO_to_Raw.png "INBO_to_Raw")
 
 **Scenario 1** : Dataset is **approved** by structural validation
 > - Technical Report is generated and saved in S3 folder "Reports"
