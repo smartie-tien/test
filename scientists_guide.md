@@ -1,6 +1,6 @@
 ## Step 2 : to_Raw
 
-**insert screenshot S3 Raw**
+![alt text](https://github.com/smartie-tien/test/blob/master/INBO_AF_02_to_raw.png "INBO_AF_02_to_raw")
 
 The purpose of the second step is to validate the general data quality of the uploaded file against certain quality criteria and, if approved, transfer the content of the data file into the DynamoDB table "Raw".
 
