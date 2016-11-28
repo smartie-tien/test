@@ -1,10 +1,12 @@
 ## Step 2 : to_Raw
 
+<p align="center">
+  <img src="https://github.com/smartie-tien/test/blob/master/INBO_AF_02_to_raw.png">
+</p>
 
-![alt text](https://github.com/smartie-tien/test/blob/master/INBO_AF_02_to_raw.png "INBO_AF_02_to_raw")
-
-![alt text](https://github.com/smartie-tien/test/blob/master/Web_Raw.png "Web_Raw")
-
+<p align="center">
+  <img src="https://github.com/smartie-tien/test/blob/master/Web_Raw.png">
+</p>
 
 The purpose of the second step is to validate the general data quality of the uploaded file against certain quality criteria and, if approved, transfer the content of the data file into the DynamoDB table "Raw".
 
@@ -22,7 +24,9 @@ The goal is to perform the initial structural validation based on quality standa
 
 There are two scenario's in this step, that are shown in the figure below.
 
-![alt text](https://github.com/smartie-tien/test/blob/master/INBO_to_Raw.png "INBO_to_Raw")
+<p align="center">
+  <img src="https://github.com/smartie-tien/test/blob/master/INBO_to_Raw.png">
+</p>
 
 **Scenario 1** : Dataset is **approved** by structural validation
 > - Technical Report is generated and saved in S3 folder "Reports"
