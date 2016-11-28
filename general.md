@@ -1,7 +1,7 @@
 # Invasive species (Proof of Value)
 The purpose of the Proof of Value is to lay the foundations to centralise and standardise the data in the cloud, through means of a semi-automated workflow. To accomodate the original requests and workflow that was proposed in the working document that was provided by INBO, we agreed on the following general flow.
 
-**insert general flow image**
+![alt text](https://github.com/smartie-tien/test/blob/master/INBO_AF_00.png "INBO_AF_00")
 
 In order to minimize the workflow and ensure that it's easy-to-use and intuitive, we chose to only use tools that the researchers are familiar with :
 - A new **web portal** for the interaction between the researcher and the AWS components
@@ -14,7 +14,7 @@ In the next parts we'll further elaborate on the AWS components and the differen
 ## Web Application
 The web application is the portal for the researcher. The tabs in the menu bar accord with the folder structure in the S3 bucket and represent the order in which the transformations in the workflow are executed. The fact that a file is in a certain folder, gives an indication of its data quality and state of transformation. A few extra tabs were added to provide additional and necessary functionalities.
 
-**Insert to_raw image**
+![alt text](https://github.com/smartie-tien/test/blob/master/Web_Raw.png "Web_Raw")
 
 | Tab | Description |
 | --- | --- |
@@ -33,9 +33,13 @@ This tab contains all the functionalities that are related to the transformation
 The end user has the capability to start the to_Final transformation or to generate a export of the current content of the DynamoDB table "Final" to csv file.
 Every transformation comes with a report, that are shown in a list, same as the export.
 
+![alt text](https://github.com/smartie-tien/test/blob/master/Web_Final.png "Web_Final")
+
 **Throughput**
 
 This tab opens a dialogue window that allows the end user to change the read/write settings of the different DynamoDB tables. This way the user can optimise the resources to be cost-efficient by opening the floodgates when files need to be processed and lower the settings afterwards.
+
+![alt text](https://github.com/smartie-tien/test/blob/master/Web_Throughput.png "Web_Throughput")
 
 ** Google Sign-in **
 
@@ -54,7 +58,7 @@ The user has to log in to use the application. At this moment anyone with a Goog
 
 ## General Workflow
 
-** Insert general workflow image **
+![alt text](https://github.com/smartie-tien/test/blob/master/INBO_AF_00.png "INBO_AF_00")
 
 The general workflow can be summarized into 4 steps :
 - **Step 1** : User uploads file to S3 bucket through the web application
