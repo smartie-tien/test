@@ -65,8 +65,8 @@ The user has to log in to use the application. At this moment anyone with a Goog
 The general workflow can be summarized into 4 steps :
 - **Step 1** : User uploads file to S3 bucket through the web application
 - **Step 2** : Checks and transformations to DynamoDB table "Raw" -> [`to_Raw`](https://github.com/smartie-tien/test/blob/master/to_Raw.md)
-- **Step 3** : Checks and transformations to DynamoDB table "Tidy" -> [`to_Tidy`](https://github.com/smartie-tien/test/blob/master/to_Raw.md)
-- **Step 4** : Checks and transformations to DynamoDB table "Final" -> [`to_Final`](https://github.com/smartie-tien/test/blob/master/to_Raw.md)
+- **Step 3** : Checks and transformations to DynamoDB table "Tidy" -> [`to_Tidy`](https://github.com/smartie-tien/test/blob/master/to_Tidy.md)
+- **Step 4** : Checks and transformations to DynamoDB table "Final" -> [`to_Final`](https://github.com/smartie-tien/test/blob/master/to_Final.md)
 
 To start the process and upload your data file in Step 1 through the web application, there are a few key rules that need to fulfilled.
 - The filename convention is **{ProviderID}_{Filename}**
