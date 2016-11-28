@@ -62,7 +62,7 @@ The user has to log in to use the application. At this moment anyone with a Goog
 
 The general workflow can be summarized into 4 steps :
 - **Step 1** : User uploads file to S3 bucket through the web application
-- **Step 2** : Checks and transformations to DynamoDB table "Raw" -> `to_Raw`
+- **Step 2** : Checks and transformations to DynamoDB table "Raw" -> `[to_Raw]`(
 - **Step 3** : Checks and transformations to DynamoDB table "Tidy" -> `to_Tidy`
 - **Step 4** : Checks and transformations to DynamoDB table "Final" -> `to_Final`
 
