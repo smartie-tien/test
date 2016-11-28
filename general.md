@@ -18,7 +18,7 @@ The web application is the portal for the researcher. The tabs in the menu bar a
 
 
 <p align="center">
-  <img src="/Web_Raw.png">
+  <img src="Web_Raw.png">
 </p>
 
 | Tab | Description |
@@ -39,7 +39,7 @@ The end user has the capability to start the to_Final transformation or to gener
 Every transformation comes with a report, that are shown in a list, same as the export.
 
 <p align="center">
-  <img src="/Web_Final.png">
+  <img src="Web_Final.png">
 </p>
 
 **Throughput**
@@ -47,7 +47,7 @@ Every transformation comes with a report, that are shown in a list, same as the 
 This tab opens a dialogue window that allows the end user to change the read/write settings of the different DynamoDB tables. This way the user can optimise the resources to be cost-efficient by opening the floodgates when files need to be processed and lower the settings afterwards.
 
 <p align="center">
-  <img src="/Web_Throughput.png">
+  <img src="Web_Throughput.png">
 </p>
 
 **Google Sign-in**
@@ -72,7 +72,7 @@ The user has to log in to use the application. At this moment anyone with a Goog
 ## General Workflow
 
 <p align="center">
-  <img src="/INBO_AF_00.png">
+  <img src="INBO_AF_00.png">
 </p>
 
 The general workflow can be summarized into 4 steps :
@@ -82,7 +82,7 @@ The general workflow can be summarized into 4 steps :
 - **Step 4** : Checks and transformations to DynamoDB table "Final" -> [`to_Final`](https://github.com/smartie-tien/test/blob/master/to_Final.md)
 
 <p align="center">
-  <img src="/INBO_AF_01_upload_file.png">
+  <img src="INBO_AF_01_upload_file.png">
 </p>
 
 To start the process and upload your data file in Step 1 through the web application, there are a few key rules that need to fulfilled.
