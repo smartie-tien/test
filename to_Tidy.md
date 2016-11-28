@@ -1,7 +1,7 @@
 ## Step 3 : to_Tidy
 
 <p align="center">
-  <img src="https://github.com/smartie-tien/test/blob/master/INBO_AF_03_to_Tidy.png">
+  <img src="/INBO_AF_03_to_Tidy.png">
 </p>
 
 If the dataset is approved by the structural validation, the script for the transformation to the DynamoDB table "Tidy" is automatically called upon.
@@ -33,7 +33,7 @@ Because the reports are never deleted by the system, the check is built in that 
 In the figure below the different scenarios of this phase are shown in different flows. In this scheme there is a clear distinction between movements of the dataset in the DynamoDB tables and movement of the source file in the S3 folders, to make it as clear as possible for the end user.
 
 <p align="center">
-  <img src="https://github.com/smartie-tien/test/blob/master/INBO_to_Tidy.png">
+  <img src="INBO_to_Tidy.png">
 </p>
 
 **Scenario 1** : INBO researcher **approves** the content validation
