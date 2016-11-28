@@ -1,7 +1,9 @@
 # Invasive species (Proof of Value)
 The purpose of the Proof of Value is to lay the foundations to centralise and standardise the data in the cloud, through means of a semi-automated workflow. To accomodate the original requests and workflow that was proposed in the working document that was provided by INBO, we agreed on the following general flow. 
 
-![alt text](https://github.com/smartie-tien/test/blob/master/INBO_AF_00.png "INBO_AF_00")
+<p align="center">
+  <img src="https://github.com/smartie-tien/test/blob/master/INBO_AF_00.png">
+</p>
 
 In order to minimize the workflow and ensure that it's easy-to-use and intuitive, we chose to only use tools that the researchers are familiar with :
 - A new **web portal** for the interaction between the researcher and the AWS components
@@ -14,7 +16,10 @@ In the next parts we'll further elaborate on the AWS components and the differen
 ## Web Application
 The web application is the portal for the researcher. The tabs in the menu bar accord with the folder structure in the S3 bucket and represent the order in which the transformations in the workflow are executed. The fact that a file is in a certain folder, gives an indication of its data quality and state of transformation. A few extra tabs were added to provide additional and necessary functionalities.
 
-![alt text](https://github.com/smartie-tien/test/blob/master/Web_Raw.png "Web_Raw")
+
+<p align="center">
+  <img src="https://github.com/smartie-tien/test/blob/master/Web_Raw.png">
+</p>
 
 | Tab | Description |
 | --- | --- |
@@ -33,13 +38,17 @@ This tab contains all the functionalities that are related to the transformation
 The end user has the capability to start the to_Final transformation or to generate a export of the current content of the DynamoDB table "Final" to csv file.
 Every transformation comes with a report, that are shown in a list, same as the export.
 
-![alt text](https://github.com/smartie-tien/test/blob/master/Web_Final.png "Web_Final")
+<p align="center">
+  <img src="https://github.com/smartie-tien/test/blob/master/Web_Final.png">
+</p>
 
 **Throughput**
 
 This tab opens a dialogue window that allows the end user to change the read/write settings of the different DynamoDB tables. This way the user can optimise the resources to be cost-efficient by opening the floodgates when files need to be processed and lower the settings afterwards.
 
-![alt text](https://github.com/smartie-tien/test/blob/master/Web_Throughput.png "Web_Throughput")
+<p align="center">
+  <img src="https://github.com/smartie-tien/test/blob/master/Web_Throughput.png">
+</p>
 
 **Google Sign-in**
 
@@ -47,6 +56,7 @@ The user has to log in to use the application. At this moment anyone with a Goog
 
 ## AWS Components used
 
+<p align="center">
 | Component | Extra information |
 | --- | --- |
 | **Cognito** | User Authentication & Mobile Data Service |
@@ -55,10 +65,13 @@ The user has to log in to use the application. At this moment anyone with a Goog
 | **S3** | Simple Storage Service with folders : <br>Raw - Refused - Transformed - Validated - Reports - Final reports - Raw Export - Final Export
 | **SNS** | Simple Notification Service |
 | **SQS** | Simple Queue Service |
+</p>
 
 ## General Workflow
 
-![alt text](https://github.com/smartie-tien/test/blob/master/INBO_AF_00.png "INBO_AF_00")
+<p align="center">
+  <img src="https://github.com/smartie-tien/test/blob/master/INBO_AF_00.png">
+</p>
 
 The general workflow can be summarized into 4 steps :
 - **Step 1** : User uploads file to S3 bucket through the web application
@@ -66,7 +79,9 @@ The general workflow can be summarized into 4 steps :
 - **Step 3** : Checks and transformations to DynamoDB table "Tidy" -> [`to_Tidy`](https://github.com/smartie-tien/test/blob/master/to_Tidy.md)
 - **Step 4** : Checks and transformations to DynamoDB table "Final" -> [`to_Final`](https://github.com/smartie-tien/test/blob/master/to_Final.md)
 
-![alt text](https://github.com/smartie-tien/test/blob/master/INBO_AF_01_upload_file.png "INBO_AF_01_upload_file")
+<p align="center">
+  <img src="https://github.com/smartie-tien/test/blob/master/INBO_AF_01_upload_file.png">
+</p>
 
 To start the process and upload your data file in Step 1 through the web application, there are a few key rules that need to fulfilled.
 - The filename convention is **{ProviderID}_{Filename}**
