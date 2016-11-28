@@ -1,7 +1,7 @@
 ## Step 3 : to_Tidy
 
 <p align="center">
-  <img src="/INBO_AF_03_to_Tidy.png">
+  <img src="INBO_AF_03_to_Tidy.png">
 </p>
 
 If the dataset is approved by the structural validation, the script for the transformation to the DynamoDB table "Tidy" is automatically called upon.
