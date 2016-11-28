@@ -36,7 +36,7 @@ There are two scenario's in this step, that are shown in the figure below.
 - If the INBO researcher decides to delete the source file from the S3 folder "Refused", the corresponding csv export will be deleted as well.
 
 If the file is **refused**, the user can review the technical report and assess the situation.
-If the error is _too significant_, the user can delete the file in this folder and contact the provider to remedy the cause, based on the technical report. <br>If the issue is _minor_, there is an option to move the file back to the S3 folder "Raw" to save time.
+<br>If the error is _too significant_, the user can delete the file in this folder and contact the provider to remedy the cause, based on the technical report. <br>If the issue is _minor_, there is an option to move the file back to the S3 folder "Raw" to save time.
 <br>When the user tries to upload a new file, with the same filename as an file in the S3 folder "Refused", the file in the "Refused" folder with automatically be deleted.
 
 In the **APPROVED** scenario, the content of the dataset in DynamoDB table "Raw" is exported to csv.
