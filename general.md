@@ -1,5 +1,5 @@
 # Invasive species (Proof of Value)
-The purpose of the Proof of Value is to lay the foundations to centralise and standardise the data in the cloud, through means of a semi-automated workflow. To accomodate the original requests and workflow that was proposed in the working document that was provided by INBO, we agreed on the following general flow.
+The purpose of the Proof of Value is to lay the foundations to centralise and standardise the data in the cloud, through means of a semi-automated workflow. To accomodate the original requests and workflow that was proposed in the working document that was provided by INBO, we agreed on the following general flow. 
 
 ![alt text](https://github.com/smartie-tien/test/blob/master/INBO_AF_00.png "INBO_AF_00")
 
