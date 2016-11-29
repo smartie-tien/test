@@ -36,7 +36,7 @@ The web application is the portal for the researcher. The tabs in the menu bar a
 
 This tab contains all the functionalities that are related to the transformation to the DynamoDB table "Final".
 The end user has the capability to start the to_Final transformation or to generate a export of the current content of the DynamoDB table "Final" to csv file.
-Every transformation comes with a report, that are shown in a list, same as the export.
+Every transformation comes with a report, that is shown in a list, same as the export.
 
 <p align="center">
   <img src="Web_Final.png">
@@ -44,7 +44,7 @@ Every transformation comes with a report, that are shown in a list, same as the 
 
 **Throughput**
 
-This tab opens a dialogue window that allows the end user to change the read/write settings of the different DynamoDB tables. This way the user can optimise the resources to be cost-efficient by opening the floodgates when files need to be processed and lower the settings afterwards.
+This tab opens a dialogue window that allows the end user to change the read/write settings of the different DynamoDB tables. This way the user can optimise the resources to be cost-efficient by opening the floodgates when files need to be processed and lower the settings afterwards. There is no limit to increase the throughput speed, but for decreasing the throughput speed there is a **maximum of 4 times per day**.
 
 <p align="center">
   <img src="Web_Throughput.png">
@@ -56,8 +56,6 @@ The user has to log in to use the application. At this moment anyone with a Goog
 
 ## AWS Components used
 
-<center>
-
 | Component | Extra information |
 | --- | --- |
 | **Cognito** | User Authentication & Mobile Data Service |
@@ -66,8 +64,6 @@ The user has to log in to use the application. At this moment anyone with a Goog
 | **S3** | Simple Storage Service with folders : <br>Raw - Refused - Transformed - Validated - Reports - FinalReports - RawExports - FinalExports
 | **SNS** | Simple Notification Service |
 | **SQS** | Simple Queue Service |
-
-</center>
 
 ## General Workflow
 
