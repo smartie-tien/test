@@ -15,6 +15,8 @@ This phase consists of the following components :
 - Generate a Content Report, which contains the result of the content validation of the dataset
 - Move the source file from the S3 folder "Raw" to "Transformed" with a link to the Technical and Content Report and a download link to the corresponding csv RawExports
 
+After reading in the dataset from the DynamoDB table "Raw", the content is exported to csv. <br>The overall goal of the proof of value is to facilitate a workflow and result for the end user that is as similar as possible, _whether the analysis is done locally or in the cloud_. This export plays a key role in this objective.
+
 ### What is done by the to_Tidy transformation ?
 - Remove duplicate rows
 - Rename columns
