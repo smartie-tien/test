@@ -48,7 +48,7 @@ This tab opens a dialogue window that allows the end user to change the read/wri
 
 **Google Sign-in**
 
-The user has to log in to use the application. At this moment anyone with a Google account can log in, but the internal INBO team can modify this to a list of approved users.
+The user has to log in to use the application. ``At this moment anyone with a Google account can log in, but the internal INBO team can modify this to a list of approved users``.
 
 ## AWS Components used
 
