@@ -10,8 +10,15 @@ When the user start the to_Final transformation, the following steps are perform
 - Clear DynamoDB table "Final"
 - Content of S3 folder "Validated" is retrieved
 - to_Final transformation is performed, solely on the datasets of the files that are in the S3 folder "Validated"
-- Name matching with the INBO tsv
-- GBIF columns are added to the dataset
+- Name matching with the [gibf-match-patch.csv](https://github.com/inbo/invasive-t0-occurrences/blob/master/data/vocabularies/gbif-match-patch.tsv)
+- GBIF columns are added to the dataset with the prefix `gbif_api_*`
+ - usageKey
+ - scientificName
+ - rank
+ - status
+ - matchtype
+ - species
+ - speciesKey
 - Duplicates are flagged
 - Final report is generated with as name convention : `Final-Reports_{Date}_{Time}_FINAL.hmtl`
 
