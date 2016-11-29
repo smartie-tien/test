@@ -1,11 +1,7 @@
 # Invasive species (Proof of Value)
-The purpose of the Proof of Value is to lay the foundations to centralise and standardise the data in the cloud, through means of a semi-automated workflow. To accomodate the original requests and workflow that was proposed in the working document that was provided by INBO, we agreed on the following general flow. 
+The purpose of the Proof of Value is to lay the foundations to centralise and standardise the data in the cloud, through means of a semi-automated workflow. To accomodate the original requests and workflow that was proposed in the working document that was provided by INBO, we agreed on a general flow that we'll elaborate on further in this document.
 
-<p align="center">
-  <img src="INBO_AF_00.png">
-</p>
-
-In order to minimize the workflow and ensure that it's easy-to-use and intuitive, we chose to only use tools that the researchers are familiar with :
+In order to minimize the workflow and making that it's easy-to-use and intuitive, we chose to only use tools that the researchers are familiar with :
 - A new **web portal** for the interaction between the researcher and the AWS components
 - **GitHub** to save and adapt the R transformation scripts and YAML files with the business rules
 
