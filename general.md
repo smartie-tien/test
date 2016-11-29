@@ -31,7 +31,7 @@ The web application is the portal for the researcher. The tabs in the menu bar a
 **Final tab**
 
 This tab contains all the functionalities that are related to the transformation to the DynamoDB table "Final".
-The end user has the capability to start the to_Final transformation or to generate a export of the current content of the DynamoDB table "Final" to csv file.
+The end user has the capability to start the to_Final transformation or to generate an export of the current content of the DynamoDB table "Final" to csv file.
 Every transformation comes with a report, that is shown in a list, same as the export.
 
 <p align="center">
