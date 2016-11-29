@@ -15,7 +15,20 @@ This phase consists of the following components :
 - Generate a Content Report, which contains the result of the content validation of the dataset
 - Move the source file from the S3 folder "Raw" to "Transformed" with a link to the Technical and Content Report and a download link to the corresponding csv RawExports
 
-What is shown in the **Content Report** ?
+### What is done by the to_Tidy transformation ?
+- Remove duplicate rows
+- Rename columns
+- Add/update columns
+- Solve duplicate names in a single field
+- Transform eventDate
+- Transform coordinates
+- Apply the necessary vocabularies
+- Add the static values (metadata)
+- Calculate column stats
+- Create the necessary plots (plot observations on map & histograms)
+- ...
+
+### What is shown in the Content Report** ?
 
 - Name of the source file
 - Direct link to the R-script and YAML file on GitHub
