@@ -81,10 +81,6 @@ The general workflow can be summarized into 4 steps :
 - **Step 3** : Checks and transformations to DynamoDB table "Tidy" -> [`to_Tidy`](https://github.com/smartie-tien/test/blob/master/to_Tidy.md)
 - **Step 4** : Checks and transformations to DynamoDB table "Final" -> [`to_Final`](https://github.com/smartie-tien/test/blob/master/to_Final.md)
 
-<p align="center">
-  <img src="INBO_AF_01_upload_file.png">
-</p>
-
 To start the process and upload your data file in Step 1 through the web application, there are a few key rules that need to fulfilled.
 - The filename convention is **{ProviderID}_{Filename}**
 - The name convention is **case sensitive** !
