@@ -31,12 +31,12 @@ There are two scenario's in this step, that are shown in the figure below.
 **Scenario 1** : Dataset is **approved** by structural validation
 > - Technical Report is generated and saved in S3 folder "Reports"
 - Dataset is written to DynamoDB table "Raw".
-- Dataset is exported to csv and saved in S3 folder "Raw Exports"
+- Dataset is exported to csv and saved in S3 folder "RawExports"
 - File is moved from S3 folder "Raw" to "Transformed"
 
 **Scenario 2** : Dataset is **refused** by structural validation
 >- Technical Report is generated and saved in S3 folder "Reports"
-- Dataset is still exported to csv and saved in S3 folder "Raw Exports" <br> This way the INBO researcher has the technical report and raw export at his disposal to remedy the dataset.
+- Dataset is still exported to csv and saved in S3 folder "RawExports" <br> This way the INBO researcher has the technical report and raw export at his disposal to remedy the dataset.
 - File is moved from S3 folder "Raw" to "Refused"
 - If the INBO researcher decides to delete the source file from the S3 folder "Refused", the corresponding csv export will be deleted as well.
 
