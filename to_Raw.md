@@ -34,11 +34,15 @@ There are two scenario's in this step, that are shown in the figure below.
 > - Technical Report is generated and saved in S3 folder "Reports"
 - Dataset is written to DynamoDB table "Raw".
 - Dataset is exported to csv and saved in S3 folder "RawExports"
-- File is moved from S3 folder "Raw" to "Transformed"
+- Source file is moved from S3 folder "Raw" to "Transformed"
 
 **Scenario 2** : Dataset is **refused** by structural validation
->- Technical Report is generated and saved in S3 folder "Reports"
-- File is moved from S3 folder "Raw" to "Refused"
+> - Technical Report is generated and saved in S3 folder "Reports"
+- Source file is moved from S3 folder "Raw" to "Refused"
+
+**Scenario 3** : Dataset is from a **new data provider** and partner-specific YAML is not found
+> - User receives a message in Processing Information console that YAML is not found 
+- Source file remains in S3 folder "Raw" 
 
 If the file is **refused**, the user can review the technical report and assess the situation.
 <br>If the error is _too significant_, the user can delete the file in this folder and contact the provider to remedy the cause, based on the technical report. <br>If the issue is _minor_, there is an option to move the file back to the S3 folder "Raw" to save time.
