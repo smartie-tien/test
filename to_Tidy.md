@@ -8,11 +8,12 @@ If the dataset is approved by the structural validation, the script for the tran
 This phase consists of the following components :
 
 - Read the dataset from the DynamoDB table "Raw"
+- Create a csv export of the dataset in RawExports
 - Retrieve the partner-specific R transformation script and YAML file with the business rules from GitHub
 - Transform the dataset, based on the R-script and YAML file
 - Write the result to the DynamoDB table "Tidy"
 - Generate a Content Report, which contains the result of the content validation of the dataset
-- Move the source file from the S3 folder "Raw" to "Transformed" with a link to the Technical and Content Report and a download of the respective Raw export to csv
+- Move the source file from the S3 folder "Raw" to "Transformed" with a link to the Technical and Content Report and a download link to the corresponding csv RawExports
 
 What is shown in the **Content Report** ?
 
@@ -25,8 +26,7 @@ What is shown in the **Content Report** ?
  - Refuse
  - Adapt the R-script and YAML file and re-run the transformation from DynamoDB table "Raw" to "Tidy" to obtain a better result
 
-The Content Report is generated with the following name convention : `{ProviderID}_{filename}_{Date}_{Time}_CONTENT.html`
-The content and name convention of the report facilitates the **versioning**, because the INBO researcher will always know with which file the transformation was done, using which R and YAML file and at what date/time.
+The Content Report is generated with the following name convention : `{ProviderID}_{filename}_{Date}_{Time}_CONTENT.html`. The content and name convention of the report facilitates the **versioning**, because the INBO researcher will always know with which file the transformation was done, using which R and YAML file and at what date/time.
 
 Because the reports are never deleted by the system, the check is built in that verifies if the source file exists in the S3 folder "Transformed", when a content report is opened. If no file is found, the action buttons will not be displayed, because these are not applicable to the current sitation.
 
@@ -47,7 +47,6 @@ In the figure below the different scenarios of this phase are shown in different
 - CSV export from the dataset in DynamoDB table "Raw" is deleted from S3 folder "RawExports"
 
 **Scenario 3** : INBO researcher notices that only minors adjustments are necessary to correct the transformation and chooses to **re-run** the transformation
-
 > - Dataset is removed from DynamoDB tabel "Tidy"
 - INBO researcher changes the R-script and/or YAML file with business rules and commits to GitHub
 - INBO researcher presses the "Re-run" action button in the content report
