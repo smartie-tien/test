@@ -23,7 +23,7 @@ What is shown in the **Content Report** ?
 - Three action buttons for the INBO researcher to make a decision, based on the report :
  - Accept
  - Refuse
- - Adapt the R-script and YAML file and re-run the transformation from DynamoDD table "Raw" to "Tidy" to obtain a better result
+ - Adapt the R-script and YAML file and re-run the transformation from DynamoDB table "Raw" to "Tidy" to obtain a better result
 
 The Content Report is generated with the following name convention : `{ProviderID}_{filename}_{Date}_{Time}_CONTENT.html`
 The content and name convention of the report facilitates the **versioning**, because the INBO researcher will always know with which file the transformation was done, using which R and YAML file and at what date/time.
@@ -44,7 +44,7 @@ In the figure below the different scenarios of this phase are shown in different
 > - Dataset is  removed from DynamoDB table "Raw"
 - Dataset is removed from DynamoDB table "Tidy"
 - Source file is moved from S3 folder "Transformed" to "Refused"
-- CSV export from the dataset in DynamoDB table "Raw" is deleted from S3 folder "Raw exports
+- CSV export from the dataset in DynamoDB table "Raw" is deleted from S3 folder "RawExports"
 
 **Scenario 3** : INBO researcher notices that only minors adjustments are necessary to correct the transformation and chooses to **re-run** the transformation
 
