@@ -61,6 +61,7 @@ In the figure below the different scenarios of this phase are shown in different
 
 **Scenario 3** : INBO researcher notices that only minors adjustments are necessary to correct the transformation and chooses to **re-run** the transformation
 > - Dataset is removed from DynamoDB tabel "Tidy"
+- CSV export from the dataset in DynamoDB table "Raw" is deleted from S3 folder "RawExports"
 - INBO researcher changes the R-script and/or YAML file with business rules and commits to GitHub
 - INBO researcher presses the "Re-run" action button in the content report
 - The new R and YAML files are retrieved from GitHub and the flow from DynamoDB table "Raw" to "Tidy" is run again
@@ -72,5 +73,5 @@ Because the to_Tidy transformation is automatically performed when the dataset i
 **Scenario 4** : INBO researcher encounters an error in the to_Tidy transformation
 >The researcher is shown a default Content Report, which contains :
 - Name of the source file
-- Link to the partner-specific YAML file
+- Link to the relevant GitHub files
 - Three action buttons: "Approve", "Refuse", "Re-run"
