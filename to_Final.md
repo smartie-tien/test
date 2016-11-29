@@ -6,11 +6,11 @@
 
 In the tab "Final" the end user will have access to all the functionalities that are related to the DynamoDB table "Final".
 
-When the user start the to_Final transformation, the following steps are performed in the background :
+When the user start the `to_Final transformation`, the following steps are performed in the background :
 - Clear DynamoDB table "Final"
 - Content of S3 folder "Validated" is retrieved
 - to_Final transformation is performed, solely on the datasets of the files that are in the S3 folder "Validated"
-- Name matching with the [gibf-match-patch.csv](https://github.com/inbo/invasive-t0-occurrences/blob/master/data/vocabularies/gbif-match-patch.tsv)
+- Name matching with the [gibf-match-patch.tsv](https://github.com/inbo/invasive-t0-occurrences/blob/master/data/vocabularies/gbif-match-patch.tsv)
 - GBIF columns are added to the dataset with the prefix `gbif_api_*`
  - usageKey
  - scientificName
@@ -19,10 +19,10 @@ When the user start the to_Final transformation, the following steps are perform
  - matchtype
  - species
  - speciesKey
-- Duplicates are flagged
+- Duplicates are flagged on `FirstAppearance`
 - Final report is generated with as name convention : `Final-Reports_{Date}_{Time}_FINAL.hmtl`
 
-Apart from the transformation, the user also has the option to generate a csv export of the content of the current DynamoDB table "Final".
+Apart from the transformation, the user also has the option to `generate a csv export` of the content of the current DynamoDB table "Final".
 Both the reports and the exports are shown in 2 separate lists in this tab.
 
 In this phase, we built in an extra scenario as a safety net as well.
