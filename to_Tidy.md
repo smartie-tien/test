@@ -8,7 +8,7 @@ If the dataset is approved by the structural validation, the script for the tran
 This phase consists of the following components :
 
 - Read the dataset from the DynamoDB table "Raw"
-- Create a csv export of the dataset in RawExports
+- Create a csv export of the dataset in S3 folder "RawExports"
 - Retrieve the partner-specific R transformation script and YAML file with the business rules from GitHub
 - Transform the dataset, based on the R-script and YAML file
 - Write the result to the DynamoDB table "Tidy"
@@ -22,9 +22,9 @@ What is shown in the **Content Report** ?
 - The result of the content validation, with a subset of unique values per column and NaNs
 - Relevant plots, based on the data type (leaflet with observations on a map, histogram, ...)
 - Three action buttons for the INBO researcher to make a decision, based on the report :
- - Accept
- - Refuse
- - Adapt the R-script and YAML file and re-run the transformation from DynamoDB table "Raw" to "Tidy" to obtain a better result
+ - **Accept** the result
+ - **Refuse** the result
+ - Adapt the R-script and YAML file and **re-run** the transformation from DynamoDB table "Raw" to "Tidy" to obtain a better result
 
 The Content Report is generated with the following name convention : `{ProviderID}_{filename}_{Date}_{Time}_CONTENT.html`. The content and name convention of the report facilitates the **versioning**, because the INBO researcher will always know with which file the transformation was done, using which R and YAML file and at what date/time.
 
@@ -57,7 +57,7 @@ In the figure below the different scenarios of this phase are shown in different
 Because the to_Tidy transformation is automatically performed when the dataset is approved by the structural validation, we decided to build in a fourth scenario as a safety net.
 
 **Scenario 4** : INBO researcher encounters an error in the to_Tidy transformation
->- The researcher is shown a default Content Report, which contains :
+>The researcher is shown a default Content Report, which contains :
 - Name of the source file
 - Link to the partner-specific YAML file
 - Three action buttons: "Approve", "Refuse", "Re-run"
