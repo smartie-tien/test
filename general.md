@@ -63,7 +63,7 @@ The user has to log in to use the application. At this moment anyone with a Goog
 | **Cognito** | User Authentication & Mobile Data Service |
 | **DynamoDB** | NoSQL database with tables : Raw - Tidy - Final |
 | **EC2** | Elastic Cloud Computing |
-| **S3** | Simple Storage Service with folders : <br>Raw - Refused - Transformed - Validated - Reports - Final reports - Raw Export - Final Export
+| **S3** | Simple Storage Service with folders : <br>Raw - Refused - Transformed - Validated - Reports - FinalReports - RawExports - FinalExports
 | **SNS** | Simple Notification Service |
 | **SQS** | Simple Queue Service |
 
