@@ -4,11 +4,13 @@
   <img src="INBO_AF_02_to_raw.png">
 </p>
 
+The purpose of the second step is to validate the general data quality of the uploaded file against certain quality criteria and, if approved, transfer the content of the data file into the DynamoDB table "Raw".
+
+
 <p align="center">
   <img src="Web_Raw.png">
 </p>
 
-The purpose of the second step is to validate the general data quality of the uploaded file against certain quality criteria and, if approved, transfer the content of the data file into the DynamoDB table "Raw".
 
 The tab "Raw" shows the user the source files that have been uploaded to the S3 folder "Raw" and are available to start its structural validation by pressing the "Validate" button. With the structural validation the user has to take into account the following remarks:
 
