@@ -76,8 +76,13 @@ The general workflow can be summarized into 4 steps :
 To start the process and upload your data file in Step 1 through the web application, there are a few key rules that need to fulfilled.
 - The filename convention is **{ProviderID}_{Filename}**
 - The name convention is **case sensitive** !
-- No spaces in the name
+- No spaces allowed !
+- Characters allowed : 
+  - lowercase a-z
+  - Uppercase A-Z 
+  - underscore ( _ )
+  - numbers (0-9) 
 - The underlying regular expression is `\w\.-]+_[\w\.-]+\.[\w\.-]+$`
-- Filename is checked with other files that are in the S3 bucket. If the bucket already contains a file with that name, the user will get an error message.
+- Filename is checked with other files that are in the S3 bucket. If the bucket already contains a file with that name, the user will get a dialogue window with the location of the file.
 
 For more in-depth understanding of the checks and transformations of steps 2-4, a separate readme is provided per step.
